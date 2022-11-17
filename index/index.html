@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ACTIVE</title>
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+			background: #333;
+		}
+		.product {
+			width: 60%;
+			position: absolute;
+			top: 45%;	
+			left: 25%;
+		}
+		.image img {
+			width: 300px;
+			height: 300px;
+			margin: 5px;
+			border-radius: 20px;
+			cursor: pointer;
+			opacity: 0.3;
+		}
+		.image img:hover {
+			opacity: 1;
+			box-shadow: 0 0 30px white;
+		}
+		.image img:hover:active {
+			opacity: 1;
+			box-shadow: 0 0 30px white;
+		}
+		.rasm {
+			position: absolute;
+			top: 30px;
+			left: 37.5%;
+		}
+		.rasm img {
+			width: 500px;
+			height: 330px;
+			border-radius: 20px;
+			animation: f 2s infinite;
+			cursor: pointer;
+		}
+		@keyframes f {
+			0% {
+				box-shadow: 0 0 0;
+			}
+			50% {
+				box-shadow: 0 0 30px white;
+			}
+			100% {
+				box-shadow: 0 0 0;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="product">
+		<div class="image">
+			<img src="12 (22).png" onclick="a(this)">
+			<img src="12 (23).png" onclick="a(this)">
+			<img src="12 (24).png" onclick="a(this)">
+			<img src="12 (25).png" onclick="a(this)">
+			<img src="12 (26).png" onclick="a(this)">
+			<img src="12 (27).png" onclick="a(this)">
+			<img src="12 (28).png" onclick="a(this)">
+			<img src="12 (29).png" onclick="a(this)">
+			<img src="12 (30).png" onclick="a(this)">
+			<img src="12 (31).png" onclick="a(this)">
+			<img src="12 (32).png" onclick="a(this)">
+			<img src="12 (33).png" onclick="a(this)">
+			<img src="12 (34).png" onclick="a(this)">
+			<img src="12 (35).png" onclick="a(this)">
+			<img src="12 (36).png" onclick="a(this)">
+			<img src="12 (37).png" onclick="a(this)">
+			<img src="12 (38).png" onclick="a(this)">
+			<img src="12 (39).png" onclick="a(this)">
+		</div>
+	</div>
+	<div class="rasm">
+		<img src="12 (22).png" id="box">
+	</div>
+
+	<script>
+		
+		function a(b){
+			var c = document.getElementById('box');
+			c.src = b.src;
+		}
+
+	</script>
+
+</body>
+</html>
